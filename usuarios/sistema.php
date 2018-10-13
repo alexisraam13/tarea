@@ -2,9 +2,9 @@
  session_start();
 
  if (!empty($_SESSION['id']) && !empty($_SESSION['pass'])) {
-  BD('localhost', 'root', '', 'usuarios');
- require_once 'LIGA3/LIGA.php'; 
   
+ require_once 'LIGA3/LIGA.php'; 
+  BD('localhost', 'root', '', 'usuarios');
   HTML::cabeceras(array('title'=>'Sistema seguro', 'description'=>'Lo que sea...'));
   
   
